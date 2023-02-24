@@ -1,12 +1,12 @@
 import React from 'react';
-import AddUser from '../AddUser/AddUser';
 
 const Home = () => {
     return (
         <div>
-           <AddUser></AddUser>
+           {/* <AddUser></AddUser> */}
+           <h1>Welcome to Home</h1>
         </div>
     );
 };
 
-export default Home     ;<h1>welcome to home</h1>
+export default Home;
