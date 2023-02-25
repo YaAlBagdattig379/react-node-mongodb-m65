@@ -18,11 +18,13 @@ const AddUser = () => {
         .then(res => res.json())
         .then(data => {
             console.log(data,'success')
+            alert('users added successfully !!');
+            event.target.reset();
         })
     }
     return (
         <div>
-            <h2 className='text-center pt-3'>Please add user welcome</h2>
+            <h2 className='text-center pt-3'>Please Add User Welcome</h2>
             <div className='d-flex justify-content-center'>
                 <form onSubmit={handleAddUser} className='p-5'>
                   <input className='p-2 m-2 rounded w-100' type="text" name='name' required placeholder='Name'/> 
@@ -31,7 +33,6 @@ const AddUser = () => {
                   <input type="submit"className='p-2 w-100 m-2 rounded' value="Add User" />
                 </form>
             </div>
-            
         </div>
     );
 };
